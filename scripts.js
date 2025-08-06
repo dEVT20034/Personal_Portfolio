@@ -312,4 +312,14 @@ document.addEventListener('DOMContentLoaded', function() {
     if (skillsSection) {
         observer.observe(skillsSection);
     }
+
+    // CV Button functionality
+    const cvBtn = document.getElementById('cv-btn');
+    if (cvBtn) {
+        cvBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            // Open CV directly from Google Drive
+            window.open('https://drive.google.com/file/d/1vWXAI71KXLXYzcJSgIfHBgZk19OaNcGA/view?usp=sharing', '_blank');
+        });
+    }
 });
